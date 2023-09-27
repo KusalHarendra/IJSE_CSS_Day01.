@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling with CSS</title>
+    <style>
+        p{
+            text-align: justify;
+            padding: 20px;
+            color: rgb(222, 246, 6);
+            font-size: large;
+        }
+        .header_section{
+            background-image: url('abc.PNG');
+            background-size:cover;
+            background-position: left;
+            padding: 50px 0px;
+        }
+
+        .container{
+            display: flex;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        img{
+            width: 300px;
+        }
+
+        h1{
+            color: aqua;
+        }
+
+        .welcome{
+            background-color: rgba(85, 68, 68, 0.9);
+        }
+/*---------------------for mobile view-------------------------------*/
+
+        @media (max-width:768px){  /*If screen size is smaller than 768px*/
+
+            .container{
+                flex-direction:column;
+            }
+
+            .column{
+                width:100%;
+            }
+
+            .column > img{
+                max-width:100%;
+            }
+        }          
+                
+
+    </style>
+</head>
+<body>
+    <div class="header_section">
+        <div class="container">
+            <div class="column">
+                <div class="welcome">
+                <h1 >Welcome !!!</h1>
+                <p>We recommend reading this tutorial, in the sequence listed in the menu. 
+                    If you have a large screen, the menu will always be present on the left.
+                    If you have a small screen, open the menu by clicking the top menu sign 
+                    open the menu by clicking the top menu sign.We recommend reading this 
+                    tutorial, in the sequence listed in the menu. If you have a large screen,
+                    the menu will always be present on the left.
+                    If you have a small screen, open the menu by clicking the top menu sign 
+                    open the menu by clicking the top menu sign.We recommend reading this 
+                    tutorial, in the sequence listed in the menu. 
+                    If you have a large screen, the menu will always be present on the left.
+                    If you have a small screen, open the menu by clicking the top menu sign 
+                    open the menu by clicking the top menu sign.We recommend reading this 
+                    tutorial, in the sequence listed in the menu. 
+                    If you have a large screen, the menu will always be present on the left.
+                    If you have a small screen, open the menu by clicking the top menu sign 
+                    open the menu by clicking the top menu sign.We recommend reading this 
+                    tutorial, in the sequence listed in the menu. 
+                    If you have a large screen, the menu will always be present on the left.
+                    If you have a small screen, open the menu by clicking the top menu sign 
+                    open the menu by clicking the top menu sign.We recommend reading this 
+                    tutorial, in the sequence listed in the menu. 
+                    If you have a large screen, the menu will always be present on the left.
+                    If you have a small screen, open the menu by clicking the top menu sign 
+                    open the menu by clicking the top menu sign.</p>
+                </div>
+                
+            </div>
+
+            <div class="column">
+                <img src="me.jpg">
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
